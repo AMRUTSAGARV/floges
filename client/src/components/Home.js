@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import UserService from "../services/user.service";
+import Tables from "./Tables";
 const Home = () => {
   const [content, setContent] = useState("");
   useEffect(() => {
@@ -19,8 +20,8 @@ const Home = () => {
   return (
     <div className="container">
       <header className="jumbotron">
-        <h3>{content}</h3>
-        <h3>Home Page where all the Table is visible</h3>
+        <h6>{content}</h6>
+        <Tables />
       </header>
     </div>
   );
